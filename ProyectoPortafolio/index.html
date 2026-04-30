@@ -20,17 +20,15 @@
 
     <title>Mi portafolio</title>
 </head>
-
 <body>
 
- <header>
+<header>
     <div class="container">
         <nav class="menu">
-            <a href="">Inicio</a>
-            <a href="">Acerca de</a>
-            <a href="">Trabajos</a>
-            <a href="">Habilidades</a>
-            <a href="">Contacto</a>
+            <a href="#section-about">Acerca de</a>
+            <a href="#section-jobs">Trabajos</a>
+            <a href="#section-skills">Habilidades</a>
+            <a href="#">Contacto</a>
         </nav>
 
         <div class="container-text">
@@ -43,14 +41,80 @@
     </div>
 </header>
 
-    <!-- Para el contenido principal tambien puede usar la etiqueta <main> -->
-    <div id="main">
-        <p>Contenido principal</p>
-    </div>
+<!-- CONTENIDO PRINCIPAL -->
+<main>
 
-    <footer>
-        <p>Contenido del pie de página</p>
-    </footer>
+<section id="section-about">
+    <div class="container">
+        <div class="photo">
+            <img src="./img/hiram.jpeg" width="200px" height="200px" alt="Hiram Zuriel Fabian Leyva">
+        </div>
+        <div class="text">
+            <h3 class="title">Acerca de</h3>
+            <p>
+                Soy <span class="bold">Hiram Zuriel Fabian Leyva</span>, estudiante de Ingeniería en Software en la UES.
+                He trabajado en proyectos para el Colegio Emaús y la empresa Procescir,
+                mejorando sistemas mediante módulos en diferentes áreas.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="section-jobs">
+    <div class="container">
+        <h3 class="titulo">Trabajos</h3>
+        <div class="container-jobs">
+
+            <div class="job">
+                <div class="thumb">
+                    <img src="img/trabajos/emaus.png" width="250px">
+                </div>
+                <div class="description">
+                    <p class="name">Colegio Emaús</p>
+                    <p class="category">Desarrollo Web</p>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="thumb">
+                    <img src="img/trabajos/procescir.jpg" width="250px">
+                </div>
+                <div class="description">
+                    <p class="name">Procescir</p>
+                    <p class="category">Sistema y módulos</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="section-skills">
+    <div class="container">
+        <h3 class="title">Habilidades</h3>
+        <div class="container-skills">
+
+            <div class="skill">
+                <div class="icon-skill">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="description">
+                    <p class="name">HTML</p>
+                    <p class="category">Avanzado</p>
+                </div>
+            </div>
+
+            <!-- más skills -->
+
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Hiram Fabian</p>
+</footer>
 
 </body>
 
