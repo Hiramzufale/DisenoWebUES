@@ -10,11 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    
+    <!-- Font Awesome para los iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- Hoja de estilos -->
-<!-- Hoja de estilos -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Scripts -->
     <script src="./js/modernizr-custom.js"></script>
@@ -29,113 +31,184 @@
             <a href="#section-about">Acerca de</a>
             <a href="#section-jobs">Trabajos</a>
             <a href="#section-skills">Habilidades</a>
-            <a href="#">Contacto</a>
+            <a href="#section-contact">Contacto</a>
         </nav>
 
         <div class="container-text">
             <div class="text">
                 <h1 class="name">Hiram Zuriel Fabian Leyva</h1>
                 <h2 class="profession">Estudiante de Ingeniería en Software - UES</h2>
-                <button class="btn-cv">Descargar CV</button>
-            </div>
+<a class="btn-cv" href="./img/cvZuriel.pdf" download>
+    Descargar CV
+</a>            </div>
         </div>
     </div>
 </header>
 
-<!-- CONTENIDO PRINCIPAL -->
 <main>
-
-<section id="section-about">
-    <div class="container">
-        <div class="photo">
-            <img src="./img/hiram.jpeg" width="200px" height="200px" alt="Hiram Zuriel Fabian Leyva">
+    <!-- SECCIÓN ACERCA DE -->
+    <section id="section-about">
+        <div class="container">
+            <div class="photo">
+                <img src="./img/hiram.jpeg" alt="Hiram Zuriel Fabian Leyva">
+            </div>
+            <div class="text">
+                <h3 class="title">Acerca de</h3>
+                <p>
+                    Soy <span class="bold">Hiram Zuriel Fabian Leyva</span>, estudiante de Ingeniería en Software en la UES.
+                    He trabajado en proyectos para el Colegio Emaús y la empresa Procescir,
+                    mejorando sistemas mediante módulos en diferentes áreas.
+                </p>
+            </div>
         </div>
-        <div class="text">
-            <h3 class="title">Acerca de</h3>
-            <p>
-                Soy <span class="bold">Hiram Zuriel Fabian Leyva</span>, estudiante de Ingeniería en Software en la UES.
-                He trabajado en proyectos para el Colegio Emaús y la empresa Procescir,
-                mejorando sistemas mediante módulos en diferentes áreas.
-            </p>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section id="section-jobs">
-    <div class="container">
-        <h3 class="titulo">Trabajos</h3>
-        <div class="container-jobs">
-
-            <div class="job">
-                <div class="thumb">
-                    <img src="img/trabajos/emaus.png" width="250px">
+    <!-- SECCIÓN TRABAJOS -->
+    <section id="section-jobs">
+        
+        <div class="container">
+            <h3 class="title">Trabajos</h3>
+            <div class="container-jobs">
+                <div class="job">
+                    <div class="img-job">
+                        <img src="img/trabajos/emaus.png" alt="Colegio Emaús">
+                    </div>
+                    <div class="description">
+                        <p class="name">Colegio Emaús</p>
+                        <p class="category">Desarrollo Web</p>
+                    </div>
                 </div>
-                <div class="description">
-                    <p class="name">Colegio Emaús</p>
-                    <p class="category">Desarrollo Web</p>
+                <div class="job">
+                    <div class="img-job">
+                        <img src="img/trabajos/procescir.png" alt="Procescir">
+                    </div>
+                    <div class="description">
+                        <p class="name">Procescir</p>
+                        <p class="category">Sistema y módulos</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="job">
-                <div class="thumb">
-                    <img src="img/trabajos/procescir.jpg" width="250px">
-                </div>
-                <div class="description">
-                    <p class="name">Procescir</p>
-                    <p class="category">Sistema y módulos</p>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="section-skills">
-    <div class="container">
-        <h3 class="title">Habilidades</h3>
-        <div class="container-skills">
+   <!-- SECCIÓN HABILIDADES -->
+    <section id="section-skills">
+        <div class="container">
+            <h3 class="title">Habilidades</h3>
+            <div class="container-skills">
+                
+                <!-- HTML (Ya lo tenías) -->
+                <div class="skill">
+                    <div class="icon-skill">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <div class="description">
+                        <p class="name">HTML</p>
+                        <p class="category">Avanzado</p>
+                    </div>
+                </div>
 
-            <div class="skill">
-                <div class="icon-skill">
-                    <i class="fa-brands fa-html5"></i>
+                <!-- CSS -->
+                <div class="skill">
+                    <div class="icon-skill">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <div class="description">
+                        <p class="name">CSS</p>
+                        <p class="category">Intermedio</p>
+                    </div>
                 </div>
-                <div class="description">
-                    <p class="name">HTML</p>
-                    <p class="category">Avanzado</p>
+
+                <!-- JavaScript -->
+                <div class="skill">
+                    <div class="icon-skill">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <div class="description">
+                        <p class="name">JavaScript</p>
+                        <p class="category">Intermedio</p>
+                    </div>
                 </div>
+
+                <!-- PHP -->
+                <div class="skill">
+                    <div class="icon-skill">
+                        <i class="fa-brands fa-php"></i>
+                    </div>
+                    <div class="description">
+                        <p class="name">PHP</p>
+                        <p class="category">Básico</p>
+                    </div>
+                </div>
+
+                <!-- Java -->
+                <div class="skill">
+                    <div class="icon-skill">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="description">
+                        <p class="name">Java</p>
+                        <p class="category">Intermedio</p>
+                    </div>
+                </div>
+
+                <!-- C# -->
+                <div class="skill">
+                    <div class="icon-skill">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div class="description">
+                        <p class="name">C#</p>
+                        <p class="category">Intermedio</p>
+                    </div>
+                </div>
+
+                <!-- Base de Datos (SQL) -->
+                <div class="skill">
+                    <div class="icon-skill">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="description">
+                        <p class="name">Base de Datos</p>
+                        <p class="category">SQL</p>
+                    </div>
+                </div>
+
             </div>
-
-            <!-- más skills -->
-
         </div>
-    </div>
-</section>
-
-</main>
+    </section>
 
 <footer>
-<section id="section-contact">
+    <section id="section-contact">
+        <div class="container">
+            <h3 class="title">Contacto</h3>
+
+            <form class="form-message" action="#" method="POST">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="email" id="email" name="email" placeholder="Correo" required>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje:" required></textarea>
+
+                <input class="btn-send-msg" type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+<section id="section-socialMedia">
     <div class="container">
-        <h3 class="title">Contacto</h3>
+        <a href="https://www.facebook.com/hiram170305" target="_blank" class="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+        </a>
 
-        <form class="form-message" action="#" method="POST">
-            
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+        <a href="https://github.com/Hiramzufale" target="_blank" class="github">
+            <i class="fa-brands fa-github"></i>
+        </a>
 
-            <label for="email">Correo</label>
-            <input type="email" id="email" name="email" placeholder="Correo" required>
-
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
-
-            <input class="btn-send-msg" type="submit" value="Enviar">
-
-        </form>
+        <a href="https://www.instagram.com/h.fl17/?hl=es" target="_blank" class="instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
     </div>
 </section>
 </footer>
 
 </body>
-
 </html>
